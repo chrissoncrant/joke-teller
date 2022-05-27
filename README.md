@@ -6,6 +6,7 @@
 	- https://www.voicerss.org//api/ 
         - Very poor documentation; got it to work after going through the discussions in the RapidAPI page for this API.
 - Utilizing a joke API to get a random API, then passing that API into the text-to-speech API.
+    - https://v2.jokeapi.dev/ 
 - Another good project for practicing asynchronous JS. 
 - Good project for gaining experience in reading documentation and finding the answer elsewhere when the documentation for a given API is subpar.
 
