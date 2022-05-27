@@ -15,6 +15,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background: rgb(69, 186, 221);
+    font-family:'Courier New', Courier, monospace;
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
     background-position: -30vw center;
 }
 
-#button {
+button {
     cursor: pointer;
     background-color: var(--lt-pk);
     color: var(--white);
@@ -44,17 +45,48 @@ body {
     box-shadow: 2px 2px 5px 2px rgb(0, 0, 0, 0.4)
 }
 
-#button:hover {
+button:hover {
     filter: brightness(95%);
 }
 
-#button:hover {
+button:hover {
     transform: scale(0.98);
 }
 
-#button:disabled {
+button:disabled {
     cursor: default;
     filter: brightness(30%);
+}
+
+.language-selection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 250px;
+}
+
+select {
+    padding: 8px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    outline-color: var(--lt-pk);
+    width: 100%;
+}
+
+#lang {
+    margin-top: 10px;
+}
+
+#voiceBtn {
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
