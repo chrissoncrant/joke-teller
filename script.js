@@ -77,3 +77,17 @@ jokeButton.addEventListener('click', async () => {
     setAudioText(joke, lang, voice);
     audioElement.play(); 
 }) 
+
+audioElement.addEventListener('playing', () => {
+    console.log('playing');
+    jokeButton.setAttribute('disabled', 'true');
+    jokeButton.textContent = 'Telling joke now...';
+})
+
+audioElement.addEventListener('ended', () => {
+    console.log('yo');
+    jokeButton.removeAttribute('disabled');
+    jokeButton.textContent = 'Tell me another!';
+
+
+})

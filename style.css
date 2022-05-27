@@ -55,7 +55,7 @@ button:hover {
 
 button:disabled {
     cursor: default;
-    filter: brightness(30%);
+    filter: brightness(60%);
 }
 
 .language-selection {
