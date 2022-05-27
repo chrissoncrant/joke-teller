@@ -88,6 +88,4 @@ audioElement.addEventListener('ended', () => {
     console.log('yo');
     jokeButton.removeAttribute('disabled');
     jokeButton.textContent = 'Tell me another!';
-
-
 })
